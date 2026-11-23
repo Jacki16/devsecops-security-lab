@@ -1,0 +1,12 @@
+
+title = "DevSecOps Lab Secret Detection"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "lab-example-aws-key"
+description = "Detect the planted AWS example access key"
+regex = '''AKIAIOSFODNN7EXAMPLE'''
+keywords = ["AKIAIOSFODNN7EXAMPLE"]
+tags = ["lab", "secret"]
